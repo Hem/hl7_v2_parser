@@ -1,0 +1,33 @@
+{
+  "name": "hl7_v2_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "typescript": {
+    "main": "src/index.ts"
+  },
+  "typings": "bin/index",
+  "scripts": {
+    "test": "tsc && mocha -r ts-node/register test/**/*.ts",
+    "prepublish": "tsc -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "3.5.1",
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.13",
+    "@types/lodash": "4.14.63",
+    "chai": "3.5.0",
+    "mocha": "3.3.0",
+    "mocha-typescript": "1.0.23",
+    "ts-node": "3.0.2",
+    "tsconfig": "6.0.0",
+    "typescript": "2.2.2",
+    "typings": "2.1.1"
+  },
+  "dependencies": {
+    "hl7-dictionary": "1.0.1",
+    "lodash.get": "4.4.2"
+  }
+}
